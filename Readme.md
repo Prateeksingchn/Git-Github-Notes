@@ -23,10 +23,6 @@ Here's a simple and clear guide for initializing a Git repository from Visual St
 
 ---
 
-Sure! Here's an improved version with more icons for better visual guidance:
-
----
-
 ## How to Initialize a Git Repository from Visual Studio Code
 
 Follow these steps to initialize a Git repository from Visual Studio Code (VS Code):
@@ -34,36 +30,28 @@ Follow these steps to initialize a Git repository from Visual Studio Code (VS Co
 ### 1. Open Your Project in VS Code
 
 1. Launch Visual Studio Code.
-2. Open your project folder by selecting `File` ➡️ `Open Folder` and navigating to your project's directory.
-
-   ![Open Folder](https://code.visualstudio.com/assets/docs/editor/versioncontrol/2020/open-folder.png)
+2. Open your project folder by selecting `File > Open Folder` and navigating to your project's directory.
 
 ### 2. Open the Source Control View
 
-1. In the sidebar, click on the Source Control icon ![Source Control Icon](https://code.visualstudio.com/assets/docs/editor/versioncontrol/2020/source-control-icon.png) (or press `Ctrl+Shift+G` on Windows/Linux or `Cmd+Shift+G` on macOS).
-
-   ![Source Control View](https://code.visualstudio.com/assets/docs/editor/versioncontrol/2020/source-control-view.png)
+1. In the sidebar, click on the Source Control icon (or press `Ctrl+Shift+G` on Windows/Linux or `Cmd+Shift+G` on macOS).
 
 ### 3. Initialize the Repository
 
-1. In the Source Control view, you should see an option to **Initialize Repository** if your project isn't already a Git repository.
-2. Click on the **Initialize Repository** button.
-
-   ![Initialize Repository](https://code.visualstudio.com/assets/docs/editor/versioncontrol/2020/init-repo.png)
+1. In the Source Control view, you should see an option to "Initialize Repository" if your project isn't already a Git repository.
+2. Click on the "Initialize Repository" button.
 
 ### 4. Confirm Initialization
 
 1. After initializing, you'll see that the Source Control view now shows your project's files with a `U` icon next to them, indicating they are untracked.
-
-   ![Untracked Files](https://code.visualstudio.com/assets/docs/editor/versioncontrol/2020/untracked-files.png)
-
 2. A new `.git` directory will be created in your project's root directory, containing the Git metadata.
 
 ### 5. Make Your First Commit
 
-1. Stage your changes by clicking the `+` icon ![Stage Changes](https://code.visualstudio.com/assets/docs/editor/versioncontrol/2020/stage-changes.png) next to the files you want to include in your commit.
+1. Stage your changes by clicking the `+` icon next to the files you want to include in your commit.
 2. Enter a commit message in the input box at the top of the Source Control view.
-3. Click the checkmark icon (✔️) ![Commit](https://code.visualstudio.com/assets/docs/editor/versioncontrol/2020/commit.png) or press `Ctrl+Enter` (Windows/Linux) or `Cmd+Enter` (macOS) to make your first commit.
+3. Click the checkmark icon (✔️) or press `Ctrl+Enter` (Windows/Linux) or `Cmd+Enter` (macOS) to make your first commit.
+
 
 ---
 
