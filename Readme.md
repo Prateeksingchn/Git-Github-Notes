@@ -103,11 +103,10 @@ Get-ChildItem
 
 Deinitializing a Git repository by deleting the `.git` directory will remove all version history and tracking information. If you need to retain this information for future reference, consider creating a backup of the `.git` directory before deleting it.
 
----
 
-Here's a simple guide on how to create and use a `.gitignore` file, formatted as notes for a `README.md` file:
-
----
+------------------------------------------------------------------------------------------------------
+=====================================================================================================
+===
 
 ## How to Use a `.gitignore` File in Your Git Repository
 
