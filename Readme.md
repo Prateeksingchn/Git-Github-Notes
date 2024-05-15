@@ -8,14 +8,14 @@ This guide provides step-by-step instructions on how to use Git and GitHub for v
 ## Table of Contents
 
 1. [Initializing a Git Repository](#initializing-a-git-repository)
-2. [Using a `.gitignore` File](#using-a-gitignore-file)
+2. [Using a .gitignore File](#using-a-gitignore-file)
 3. [Basic Git Commands](#basic-git-commands)
 4. [Branching in Git](#branching-in-git)
 5. [Switching Branches](#switching-branches)
 6. [Creating and Switching Branches](#creating-and-switching-branches)
-7. [Stashing Changes](#stashing-changes)
+7. [Deleting Branches in Git](#deleting-branches-in-git)
 8. [Merging Branches](#merging-branches)
-9. [Deleting Branches in Git](#deleting-branches-in-git)
+9. [Stashing Changes](#stashing-changes)
 10. [Deinitializing a Git Repository](#deinitializing-a-git-repository)
 
 
@@ -283,6 +283,84 @@ Replace `<new_branch_name>` with the name you want to give your new branch.
 
 - **Create and Switch Branch**: Use `git switch -c <new_branch_name>` to create a new branch and switch to it.
 
+---
+
+## Deleting Branches in Git
+
+Deleting branches that are no longer needed helps keep your repository clean and manageable. Here's how to delete branches:
+
+### 1. Delete a Local Branch
+
+To delete a local branch, use the `-d` option with the `git branch` command:
+
+```bash
+git branch -d <branch_name>
+```
+
+Replace `<branch_name>` with the name of the branch you want to delete.
+
+If the branch has not been merged and you still want to delete it, use the `-D` option:
+
+```bash
+git branch -D <branch_name>
+```
+
+### 2. Delete a Remote Branch
+
+To delete a remote branch, use the `git push` command with the `--delete` option:
+
+```bash
+git push origin --delete <branch_name>
+```
+
+Replace `<branch_name>` with the name of the remote branch you want to delete.
+
+### Summary
+
+- **Delete Local Branch**: Use `git branch -d <branch_name>` to delete a local branch.
+- **Force Delete Local Branch**: Use `git branch -D <branch_name>` to force delete an unmerged local branch.
+- **Delete Remote Branch**: Use `git push origin --delete <branch_name>` to delete a remote branch.
+
+
+
+---
+
+## Merging Branches
+
+Merging integrates changes from one branch into another. Here's how to merge branches:
+
+### 1. Switch to the Target Branch
+
+Switch to the branch you want to merge changes into:
+
+```bash
+git checkout <target_branch>
+```
+
+Replace `<target_branch>` with the name of the branch you want to merge changes into.
+
+### 2. Merge the Source Branch
+
+To merge changes from the source branch into the target branch, use the `git merge` command followed by the source branch name:
+
+```bash
+git merge <source_branch>
+```
+
+Replace `<source_branch>` with the name of the branch you want to merge from.
+
+### 3. Resolve Conflicts
+
+If there are any conflicts, Git will highlight the conflicts in the affected files. Resolve these conflicts, stage the resolved files, and commit the merge.
+
+### Summary
+
+- **Switch Branch**: Use `git checkout <target_branch>` to switch to the target branch.
+- **Merge Branch**: Use `git merge <source_branch>` to merge changes from the source branch.
+- **Resolve Conflicts**: If conflicts arise, resolve them, stage the files, and commit.
+
+
+
 
 
 ---
@@ -357,80 +435,6 @@ git stash clear
 - **Drop Stash**: Use `git stash drop stash@{n}` to delete a specific stash or `git stash clear` to remove all stashes.
 
 
----
-
-## Merging Branches
-
-Merging integrates changes from one branch into another. Here's how to merge branches:
-
-### 1. Switch to the Target Branch
-
-Switch to the branch you want to merge changes into:
-
-```bash
-git checkout <target_branch>
-```
-
-Replace `<target_branch>` with the name of the branch you want to merge changes into.
-
-### 2. Merge the Source Branch
-
-To merge changes from the source branch into the target branch, use the `git merge` command followed by the source branch name:
-
-```bash
-git merge <source_branch>
-```
-
-Replace `<source_branch>` with the name of the branch you want to merge from.
-
-### 3. Resolve Conflicts
-
-If there are any conflicts, Git will highlight the conflicts in the affected files. Resolve these conflicts, stage the resolved files, and commit the merge.
-
-### Summary
-
-- **Switch Branch**: Use `git checkout <target_branch>` to switch to the target branch.
-- **Merge Branch**: Use `git merge <source_branch>` to merge changes from the source branch.
-- **Resolve Conflicts**: If conflicts arise, resolve them, stage the files, and commit.
-
-
----
-
-## Deleting Branches in Git
-
-Deleting branches that are no longer needed helps keep your repository clean and manageable. Here's how to delete branches:
-
-### 1. Delete a Local Branch
-
-To delete a local branch, use the `-d` option with the `git branch` command:
-
-```bash
-git branch -d <branch_name>
-```
-
-Replace `<branch_name>` with the name of the branch you want to delete.
-
-If the branch has not been merged and you still want to delete it, use the `-D` option:
-
-```bash
-git branch -D <branch_name>
-```
-
-### 2. Delete a Remote Branch
-
-To delete a remote branch, use the `git push` command with the `--delete` option:
-
-```bash
-git push origin --delete <branch_name>
-```
-
-Replace `<branch_name>` with the name of the remote branch you want to delete.
-
-### Summary
-
-- **Delete Local Branch**: Use `git branch -d <branch_name>` to delete a local branch.
-- **Force Delete Local Branch**: Use `git branch -D <branch_name>` to force delete an unmerged local branch.
-- **Delete Remote Branch**: Use `git push origin --delete <branch_name>` to delete a remote branch.
 
 
 ---
