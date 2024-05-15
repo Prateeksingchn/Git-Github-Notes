@@ -199,3 +199,12 @@ tmp/
 Using a `.gitignore` file helps keep your repository clean by excluding files that should not be tracked by Git.
 
 ---
+
+
+# Deleting the branch
+- git branch 
+- git branch -d "branch name (for ex- feature/navbar)"
+
+
+# how to create and switch to a branch
+- git switch -C feature/add-footer
