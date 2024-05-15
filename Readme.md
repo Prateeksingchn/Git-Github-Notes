@@ -19,8 +19,8 @@ baare mein, before commit or after commit
 - git log batata hai, aapke saved points kya hai, aapke saare commit histories
 
 
-Here's a simple and clear guide for initializing a Git repository from Visual Studio Code, formatted as notes for a `README.md` file:
-
+---
+---
 ---
 
 ## How to Initialize a Git Repository from Visual Studio Code
@@ -53,6 +53,8 @@ Follow these steps to initialize a Git repository from Visual Studio Code (VS Co
 3. Click the checkmark icon (✔️) or press `Ctrl+Enter` (Windows/Linux) or `Cmd+Enter` (macOS) to make your first commit.
 
 
+---
+---
 ---
 
 ## How to Deinitialize a Git Repository
@@ -103,10 +105,13 @@ Get-ChildItem
 
 Deinitializing a Git repository by deleting the `.git` directory will remove all version history and tracking information. If you need to retain this information for future reference, consider creating a backup of the `.git` directory before deleting it.
 
+---
+---
+---
 
-------------------------------------------------------------------------------------------------------
-=====================================================================================================
-===
+Here's a simple guide on how to create and use a `.gitignore` file, formatted as notes for a `README.md` file:
+
+---
 
 ## How to Use a `.gitignore` File in Your Git Repository
 
